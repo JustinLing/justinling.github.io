@@ -30,8 +30,24 @@ html, body, #googft-mapCanvas {
     var map = new google.maps.Map(mapDiv, {
       center: new google.maps.LatLng(48.927673747764274, -74.33821348750007),
       zoom: 4,
-      mapTypeId: 'terrain',
+      mapTypeId: 'terrain',  
+    
     });
+    
+    var contentString = <div class='googft-info-window'>
+<h1>{First Nation}, {Community}</h1><br>
+<b>Nation:</b> {Nation}<br>
+<b>Province:</b> {Province}<br>
+<b>System Name:</b> {System Name}<br>
+<b>Type of Adivsory:</b> {Type of Adivsory}<br>
+<b>Population (gov):</b> {Population (gov)}<br>
+<b>Date set:</b> {Date set}
+</div>
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
     
     var lineSymbol = {
     path: google.maps.SymbolPath.CIRCLE,
