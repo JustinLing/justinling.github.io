@@ -32,6 +32,12 @@ html, body, #googft-mapCanvas {
       zoom: 4,
       mapTypeId: 'terrain',
     });
+    
+    var lineSymbol = {
+    path: google.maps.SymbolPath.CIRCLE,
+    scale: 8,
+    strokeColor: '#000'
+  };
 
     layer = new google.maps.FusionTablesLayer({
       map: map,
