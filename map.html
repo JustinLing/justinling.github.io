@@ -33,17 +33,15 @@ html, body, #googft-mapCanvas {
       mapTypeId: 'terrain',  
     
     });
-    
-    var contentString = '<h1>{First Nation}, {Community}</h1><br>
+
+        var infowindow = new google.maps.InfoWindow({
+          content: <h1>{First Nation}, {Community}</h1><br>
 <b>Nation:</b> {Nation}<br>
 <b>Province:</b> {Province}<br>
 <b>System Name:</b> {System Name}<br>
 <b>Type of Adivsory:</b> {Type of Adivsory}<br>
 <b>Population (gov):</b> {Population (gov)}<br>
-<b>Date set:</b> {Date set}'
-
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
+<b>Date set:</b> {Date set}
         });
 
     
