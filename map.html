@@ -29,7 +29,7 @@ html, body, #googft-mapCanvas {
     mapDiv.style.height = isMobile ? '100%' : '100%';
     var map = new google.maps.Map(mapDiv, {
       center: new google.maps.LatLng(50.071691, -76.683332),
-      zoom: 6,
+      zoom: 5,
       mapTypeId: 'terrain',  
       styles: [
   {
@@ -53,6 +53,14 @@ html, body, #googft-mapCanvas {
     "stylers": [
       {
         "color": "#1a3646"
+      }
+    ]
+  },
+        {
+    "featureType": "administrative",
+    "stylers": [
+      {
+        "visibility": "off"
       }
     ]
   },
