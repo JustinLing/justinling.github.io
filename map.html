@@ -393,14 +393,16 @@ html, body, #googft-mapCanvas {
     var infowindow = new google.maps.InfoWindow({
           maxWidth: 200
         });
+    var icon = {
+                icon: {'http://www.yorica.com/wp-content/themes/Yorica/images/nav-icon.png',
+    scaledSize: new google.maps.Size(50, 50),
+    origin: new google.maps.Point(0,0),
+    anchor: new google.maps.Point(0, 0) };
     var marker = new google.maps.Marker({
           position: {lat:49.609682, lng: -95.160934},
           map: map,
           title: 'Hello World!',
-          icon: {'http://www.yorica.com/wp-content/themes/Yorica/images/nav-icon.png',
-    scaledSize: new google.maps.Size(50, 50),
-    origin: new google.maps.Point(0,0),
-    anchor: new google.maps.Point(0, 0)
+      icon: icon
         });
 
     
