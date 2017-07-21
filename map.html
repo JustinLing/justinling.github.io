@@ -398,7 +398,9 @@ html, body, #googft-mapCanvas {
           map: map,
           title: 'Hello World!',
           icon: {'http://www.yorica.com/wp-content/themes/Yorica/images/nav-icon.png',
-                 scaledSize: 30, 30 }
+    scaledSize: new google.maps.Size(50, 50),
+    origin: new google.maps.Point(0,0),
+    anchor: new google.maps.Point(0, 0)
         });
 
     
