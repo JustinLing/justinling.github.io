@@ -5,12 +5,9 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
       #map {
         height: 100%;
       }
-      /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
         margin: 0;
@@ -25,8 +22,8 @@
        
         var layer = new google.maps.FusionTablesLayer({
           query: {
-            select: '\'Geocodable address\'',
-            from: '1Gyr4q1GzpdoxN9zo1XGBiQhKVYm3eqzv03s0F2-j'
+            select: '50.789233, -85.092497',
+            from: '1ZOxODJ6M8p07xmELNVSid2zVquslT7MuBOuYHbb9'
           }
         });
         layer.setMap(map);
