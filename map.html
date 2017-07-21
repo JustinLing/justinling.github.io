@@ -396,9 +396,10 @@ html, body, #googft-mapCanvas {
     origin: new google.maps.Point(0,0),
     anchor: new google.maps.Point(0, 0) };
       
-    var markers = [
-      ['Shoal Lake 40', 49.609682, -95.160934],
-      ];
+    var shoal = new google.maps.Marker({
+      position: lat: 49.609682, lon: -95.160934,
+      title: 'Shoal Lake 40'
+      )};
     
     if (isMobile) {
       var legend = document.getElementById('googft-legend');
