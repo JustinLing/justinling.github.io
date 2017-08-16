@@ -421,14 +421,13 @@ html, body, #googft-mapCanvas {
       }
     }
   }
-  google.maps.event.addDomListener(window, 'load', initialize);
-  layer = new google.maps.FusionTablesLayer({
-      query: {
-        select: "col4",
-        from: "1Gyr4q1GzpdoxN9zo1XGBiQhKVYm3eqzv03s0F2-j",
-        where: "" }
-  })
 
+map.loadFromFusionTables({
+  query: {
+    select: '\'Geocodable address\'',
+    from: '1Gyr4q1GzpdoxN9zo1XGBiQhKVYm3eqzv03s0F2-j'
+  },
+});
 
 </script>
 </head>
