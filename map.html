@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="gmaps.js"></script>
 <meta name="viewport"></meta>
 <title>Boil water advisories across Canada</title>
 <style type="text/css">
@@ -14,7 +13,6 @@ html, body, #googft-mapCanvas {
 </style>
 
 <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCHGcZVt0JT_MiP1wkjydHx1EyJabMxqLY&callback=initMap"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
   
 <script type="text/javascript">
   function initialize() {
@@ -433,6 +431,8 @@ map.loadFromFusionTables({
 </head>
 
 <body>
+  <script src="gmaps.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js"></script>
   <div id="googft-mapCanvas"></div>
 </body>
 </html>
