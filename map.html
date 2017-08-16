@@ -402,7 +402,11 @@ html, body, #googft-mapCanvas {
       title: 'Shoal Lake 40',
       icon: icon
       });
-
+  var layer = new google.maps.FusionTablesLayer({
+    query: {
+      from: '1Gyr4q1GzpdoxN9zo1XGBiQhKVYm3eqzv03s0F2-j'
+    }
+  });
     if (isMobile) {
       var legend = document.getElementById('googft-legend');
       var legendOpenButton = document.getElementById('googft-legend-open');
