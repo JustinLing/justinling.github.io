@@ -384,53 +384,26 @@ html, body, #googft-mapCanvas {
     
     });
    
-       var i;  
-        var Locations = [
-                {
-                  lat:48.856614, 
-                  lon:2.3522219000000177, 
-                  address:'Paris',
-                  gval:'25.5',
-                  aType:'Non-Commodity',
-                  title:'Paris',
-                  descr:'Paris'           
-                },        
-                    {
-                  lat: 55.7512419, 
-                  lon: 37.6184217,
-                  address:'Moscow',
-                  gval:'11.5',
-                  aType:'Non-Commodity',
-                  title:'Moscow',
-                  descr:'Moscow Airport'              
-                },     
-
-                {
-              lat:-9.481553000000002, 
-              lon:147.190242, 
-              address:'Port Moresby',
-              gval:'1',
-              aType:'Oil',
-              title:'Papua New Guinea',
-              descr:'Papua New Guinea 123123123'              
-            },
-            {
-           lat:20.5200,
-           lon:77.7500,
-           address:'Indore',
-            gval:'1',
-            aType:'Oil',
-            title:'Indore, India',
-            descr:'Airport India'
-        }
-    ];
-   
     layer = new google.maps.FusionTablesLayer({
       map: map,
       heatmap: { enabled: false },
       query: {
         select: "col4",
         from: "1Gyr4q1GzpdoxN9zo1XGBiQhKVYm3eqzv03s0F2-j",
+        where: ""
+      },
+      options: {
+        styleId: 2,
+        templateId: 2
+      }
+    });
+   
+       layer = new google.maps.FusionTablesLayer({
+      map: map,
+      heatmap: { enabled: false },
+      query: {
+        select: "col4",
+       from: "1PF-TmNua-NOCuc51OEHc3jxmLbWTh_xFFmGv9sMr",
         where: ""
       },
       options: {
