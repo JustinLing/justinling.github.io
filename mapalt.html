@@ -24,8 +24,8 @@ html, body, #googft-mapCanvas {
       viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
     }
     var mapDiv = document.getElementById('googft-mapCanvas');
-    mapDiv.style.width = isMobile ? '100%' : '500px';
-    mapDiv.style.height = isMobile ? '100%' : '300px';
+    mapDiv.style.width = isMobile ? '100%' : '100%';
+    mapDiv.style.height = isMobile ? '100%' : '100%';
     var map = new google.maps.Map(mapDiv, {
       center: new google.maps.LatLng(50.071691, -76.683332),
       zoom: 5,
@@ -397,6 +397,18 @@ html, body, #googft-mapCanvas {
         templateId: 2
       }
     });
+   
+    var lineSymbol = {
+    path: google.maps.SymbolPath.CIRCLE,
+    scale: 8,
+    strokeColor: '#000'
+  };
+    var icon = {
+    url: "https://cdn0.iconfinder.com/data/icons/basic-uses-symbol-vol-1/100/Drop_Oil_Water_Down_Small_Liquid-128.png",
+    scaledSize: new google.maps.Size(50, 50),
+    origin: new google.maps.Point(0,0),
+    anchor: new google.maps.Point(0, 0) 
+    };
 
     if (isMobile) {
       var legend = document.getElementById('googft-legend');
