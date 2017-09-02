@@ -397,7 +397,10 @@ html, body, #googft-mapCanvas {
         templateId: 2
       }
     });
-   
+   var googft-info-window =({
+    background-color: #000000;
+   });
+  
     var lineSymbol = {
     path: google.maps.SymbolPath.CIRCLE,
     scale: 8,
@@ -410,16 +413,6 @@ html, body, #googft-mapCanvas {
     anchor: new google.maps.Point(0, 0) 
     };
    
- .gm-style .gm-style-iw {
-            background-color: #3C61AD !important;
-            top: 0 !important;
-            left: 0 !important;
-            width: 100% !important;
-            height: 100% !important;
-            min-height: 120px !important;
-            padding-top: 10px;
-            display: block !important;
-         }    
     if (isMobile) {
       var legend = document.getElementById('googft-legend');
       var legendOpenButton = document.getElementById('googft-legend-open');
