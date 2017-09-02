@@ -11,7 +11,6 @@ html, body, #googft-mapCanvas {
   padding: 0;
 }
 </style>
- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCHGcZVt0JT_MiP1wkjydHx1EyJabMxqLY&callback=initMap"></script>
 
 <script type="text/javascript">
@@ -406,12 +405,6 @@ html, body, #googft-mapCanvas {
     scale: 8,
     strokeColor: '#000'
   };
-    var icon = {
-    url: "https://cdn0.iconfinder.com/data/icons/basic-uses-symbol-vol-1/100/Drop_Oil_Water_Down_Small_Liquid-128.png",
-    scaledSize: new google.maps.Size(50, 50),
-    origin: new google.maps.Point(0,0),
-    anchor: new google.maps.Point(0, 0) 
-    };
    
     if (isMobile) {
       var legend = document.getElementById('googft-legend');
