@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport"></meta>
-<title>MAIN water data map - Google Fusion Tables</title>
+<title>Canada's Indigenous drinking water crisis</title>
 <style type="text/css">
 html, body, #googft-mapCanvas {
  height: 100%;
@@ -22,6 +22,11 @@ html, body, #googft-mapCanvas {
       var viewport = document.querySelector("meta[name=viewport]");
       viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
     }
+   var marker1 = new google.maps.Marker({
+          position: 3.275212, -84.419489,
+          map: map,
+          title: 'Hello World!'
+        });
     var mapDiv = document.getElementById('googft-mapCanvas');
     mapDiv.style.width = isMobile ? '100%' : '100%';
     mapDiv.style.height = isMobile ? '100%' : '100%';
