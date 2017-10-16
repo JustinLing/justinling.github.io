@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//Dli XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Dli/xhtml1-transitional.dli">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Justin Ling</title>
+<script>
+var host = "justinling.ca";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
+
+<meta name="description" content="Justin Ling is a freelance investigative journalist.">
+<meta name="keywords" content="Canada, vice news, vice news canada, justin ling, justin ling email, justin ling phone number, justin ling twitter">
+</head>
+<style type="text/css">
+
+html{
+    width:100%;
+    height:100%;
+}
+body {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  position:absolute;
+}
+a {
+   text-decoration:none;
+  color: #D14719
+}
+a:hover {
+     text-decoration: underline;
+  
+}
+p {
+    text-align:;left
+    line-height: 100%;
+    font-family: 'Gill Sans', 'Helvetica', sans-serif;
+    font-size: 150%;
+    font-weight:100;
+    opacity:1;
+
+}
+iframe {
+  text-align: center;
+}
+#header {
+  width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0;
+    margin-top:0;
+  position: static; 
+}
+#stories {
+  max-width: 35%;
+  margin-left: 3%;
+  margin-top: 7%;
+  margin-right:1%;
+  float:left;
+  display:block;
+}
+#form {
+  width: 50%;
+  margin-right: 3%;
+  display:block;
+  float:right;
+  margin-left:1%;
+}
+h1 {
+  text-transform: none;
+    font-size: 220%;
+    margin-bottom: 0;
+    padding-right:1%;
+    padding-left:1%;
+    margin-top:0;
+    padding-top:3%;
+  letter-spacing: -1px;
+    line-height: 125%;
+  font-weight: 500;
+    font-family: 'Gill Sans', 'Helvatica', sans-serif;
+    text-align: center;
+    color: #444444;
+    background-color: rgba(255,255,255,0.4);
+}
+</style>
+</head>
+<body>
+<h1>Bylines</h1>
+<hr>
+<div id="stories">
+  <p><a href="https://news.vice.com/story/exclusive-canadian-police-obtained-blackberrys-global-decryption-key">How BlackBerry handed over their global decryption key to the Royal Canadian Mounted Police.</a></p>
+</body>
+</html>
