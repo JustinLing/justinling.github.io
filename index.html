@@ -60,10 +60,10 @@ iframe {
   width: 80vw;
   margin-right: auto;
   margin-left: auto;
-  display:static;
+  padding-top: 3vh;
+  display:block;
   float:center;
   height:100vh;
-    line-height:1vw;
     margin-top:0;
     margin-bottom:0;
 }
@@ -71,44 +71,31 @@ iframe {
   width: 80vw;
   margin-right: auto;
   margin-left: auto;
-  display:static;
+  display:block;
   float:center;
-  max-height:100vh;
+  height:100vh;
     margin-top:0;
     margin-bottom:0;
 }
-#transition {
+
+#bylines{
   width: 80vw;
   margin-right: auto;
   margin-left: auto;
-  display:static;
-  float:center;
-  height:20vh;
-    margin-top:10vh;
-    margin-bottom:0;
-}
-
-#headlines{
-  width: 40vw;
-  margin-right: auto;
-  margin-left: auto;
-  display:static;
+  display:block;
   float:center;
   height:100vh;
-    margin-top:10vh;
+    margin-top:0;
     margin-bottom:0;
 }
-
-#stories{
-  width: 80vw;
-  margin-right: auto;
-  margin-left: auto;
-  display:static;
-  float:center;
-  height:100vh;
-    margin-top:10vh;
-    margin-bottom:0;
-    over
+#stories {
+  max-width: 50vw;
+  margin-left: 3vw;
+  margin-top: 0vw;
+  margin-right:1vw;
+  margin-bottom:5vh;
+  float:left;
+  display:block;
 }
 
 h1 {
@@ -126,7 +113,39 @@ h1 {
     color: #444444;
     background-color: rgba(255,255,255,0.4);
 }
-    h2 {
+h2 {
+  text-transform: none;
+    font-size: 1.8em;
+    margin-bottom: 0;
+    padding-right:1%;
+    padding-left:1%;
+    padding-bottom: 1%;
+    margin-top:0;
+    padding-top:3%;
+  letter-spacing: -1px;
+    line-height: 100%;
+  font-weight: 500;
+    font-family: "Big Caslon", "Goudy Old Style", "Book Antiqua", Georgia, serif;
+    text-align: left;
+    color: #444444;
+}
+h3
+{
+    text-transform: none;
+    font-size: 1.4em;
+    margin-bottom: 0;
+    padding-right:1%;
+    padding-left:1%;
+    margin-top:0;
+    padding-top:3%;
+  letter-spacing: -1px;
+    line-height: 100%;
+  font-weight: 500;
+    font-family: "Big Caslon", "Goudy Old Style", "Book Antiqua", Georgia, serif;
+    text-align: left;
+    color: #444444;
+}
+    h5 {
        text-transform: none;
     font-size: 8em;
     margin-bottom: 0;
@@ -141,26 +160,17 @@ h1 {
     color: #000000;
     background-color: rgba(255,255,255,0.4);
     }
-h3 {
-    text-align:center;
-    line-height: 100%;
-    font-family: "PublicSans-Regular";
-    font-size: 1.8em;
-    font-weight:300;
-    opacity:1;
-    margin-top:1vh;
-    margin-bottom:0;
-}
+
     h4 {
         text-transform: none;
-    font-size: 4.2em;
+    font-size: 5em;
     margin-bottom: 0;
     padding-right:1%;
     padding-left:1%;
-    margin-top:2vh;
-    line-height: 110%;
-  padding-bottom: 5vh;
-  font-weight: 800;
+    margin-top:1vh;
+    line-height: 150%;
+  padding-bottom: 4vh;
+  font-weight: 900;
     font-family: "PublicSans-ExtraBold";
     text-align: center;
     color: #000000;
@@ -170,15 +180,25 @@ h3 {
 </head>
 <body>
   <div id="bio">
-<h2><a href="/secret.html">✱</a></h2>
-<h4>Hi, I'm Justin Ling.</h4><h1> I'm a freelance journalist, and I cover a weird assortment of things. Privacy, security, foreign policy, politics, law, defence, the list goes on. I hosted <a href="https://www.cbc.ca/mediacentre/program/uncover-the-village">Uncover: The Village</a>, and my book will be out <a href="https://www.newswire.ca/news-releases/mcclelland--stewart-to-publish-investigation-into-accused-serial-killer-bruce-mcarthur-679175693.html">next year.</a></h1><h1>I'm based in Toronto and Montreal, and I'm big on privacy. So if you want to get in touch, there's lots of ways.</h1><h1>Please don't call me to talk about aliens. Email is better for that.</h1><h1>(Keep scrolling.)</h1>
-</div>
-  <div id="contact">
-    <p>This is my Signal address +16134072292</p>
-    <p> This is a secure email, encrypted and hosted in Switzerland, meaning law enforcement will have difficulty in obtaining anything in my inbox: <a href="mailto:justinling@protonmail.com">justinling@protonmail.com</a></p>
-    <p><a href="https://www.justinling.ca/publickey.html">This is my PGP Key</a> and a <a href="https://ssd.eff.org/en/module/introduction-public-key-cryptography-and-pgp">and here is a guide to PGP</a> if you're unfamiliar or confused.</p>
-<h3>This is an encrypted contact form. You can fill out, or leave blank, your information.</h3><iframe src="https://i.cx/secureForm.html?id_name=name&element_name=text&id_email=email&element_email=text&validate_email=email&id_phone=phone&element_phone=text&id_message=message&element_message=textarea&toUser=Justinling" width="100%" height="500px" max-height="600px" overflow="hidden" align="center" frameborder="0"></iframe></div>
-    </br><h3>Here are some things I've written. <a href="https://muckrack.com/justin-ling">You can find more on MuckRack.</a></h3> <div id="stories"><iframe src="https://www.justinling.ca/bylines" height="1000px" width="100%" overflow="hidden" frameBorder="0"> </iframe>
-  </div>
+<h5><a href="/secret.html">✱</a></h5>
+<h4>Hi, I'm Justin Ling.</h4><h1> I'm a freelance journalist, and I cover a weird assortment of things. Privacy, security, foreign policy, politics, law, defence, the list goes on. I hosted <a href="https://www.cbc.ca/mediacentre/program/uncover-the-village">Uncover: The Village</a>, and my book will be out later this year, <a href="https://www.penguinrandomhouse.ca/books/599945/missing-from-the-village-by-justin-ling/9780771048647">pre-order it now.</a></h1><h1>I'm based in Montreal, mostly, and I'm big on privacy. So if you want to get in touch, there's lots of ways.</h1><h1>Please don't call me to talk about aliens. Email is better for that.</h1>
+
+    <h1>This is my Signal address +16134072292</h1>
+    <h1> This is a secure email, encrypted and hosted in Switzerland, meaning law enforcement will have difficulty in obtaining anything in my inbox: <a href="mailto:justinling@protonmail.com">justinling@protonmail.com</a></h1>
+    <h1><a href="https://www.justinling.ca/publickey.html">This is my PGP Key</a> and a <a href="https://ssd.eff.org/en/module/introduction-public-key-cryptography-and-pgp">and here is a guide to PGP</a> if you're unfamiliar or confused.</h1>
+   <h1>You can find some things I've written <a href="https://muckrack.com/justin-ling">on MuckRack.</a></h1>
+    <h1>Recently I've been writing about <a href="https://nationalpost.com/news/reforms-to-rcmp-canadian-justice-system-coming-as-protests-sweep-world-public-safety-minister-says">police reform</a>, COVID-19 in <a href="https://www.vice.com/en_ca/article/ep44aa/justin-trudeau-canada-has-failed-to-protect-inmates-from-pandemic-lawsuit-alleges">federal prisons</a>, the national security threat posed by <a href="https://foreignpolicy.com/2020/06/02/incels-toronto-attack-terrorism-ideological-violence/">Incels</a>, and of the new golden age for <a href="https://thewalrus.ca/dont-drink-the-bleach/">flimflam artists.</a></h1>
+    <p><pre align="left">               ,;;;,
+             ;;;;;;;
+          .-'`\, '/_
+        .'   \ ("`(_)
+       / `-,.'\ \_/
+       \  \/\  `--`
+        \  \ \
+         / /| |
+        /_/ |_|
+       ( _\ ( _\  #:##        #:##        #:##       #:##     #:##          #:##        #:##  
+                        #:##        #:##        #:##        #:##        #:##      #:##</pre></p></div>
+
 </body>
 </html>
